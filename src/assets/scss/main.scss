@@ -1,1 +1,35 @@
 @import '../../../node_modules/materialize-grid-list/css/materialize-grid-list.css';
+@import 'variables.scss';
+
+body {
+  background-color: $black-body;
+  h1 {
+    font-family: 'Monument', Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    font-weight: 100;
+  }
+  h2 {
+    font-family: 'Monument', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+  }
+  p, li, a, span {
+    font-family: 'Monument', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+// @media #{$medium-and-up} {
+//   .container {
+//     width: 85%;
+//   }
+// }
+// @media #{$large-and-up} {
+//   .container {
+//     width: 70%;
+//   }
+// }
