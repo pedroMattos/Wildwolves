@@ -1,6 +1,6 @@
 <template>
   <nav id="nav" class="row">
-    <div class="col s12">
+    <div class="col-sm-12">
       <ul class="container">
         <li><img src="../images/logo.png" alt=""></li>
         <li><p>Sobre</p></li>
@@ -25,6 +25,8 @@ export default {
 @import '../../assets/scss/variables.scss';
 
   #nav {
+      position: absolute;
+      z-index: 1;
     ul {
       display: inline-flex;
       list-style: none;
