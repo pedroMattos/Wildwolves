@@ -1,5 +1,7 @@
-@import '../../../node_modules/materialize-grid-list/css/materialize-grid-list.css';
+@import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
 @import 'variables.scss';
+@import 'btn/btn.scss';
+@import 'title/sec-title.scss';
 
 body {
   background-color: $black-body;
@@ -11,6 +13,10 @@ body {
   h2 {
     font-family: 'Monument', Arial, Helvetica, sans-serif;
     font-size: 26px;
+  }
+  h3 {
+    font-family: 'Monument', Arial, Helvetica, sans-serif;
+    font-size: 20px;
   }
   p, li, a, span {
     font-family: 'Monument', Arial, Helvetica, sans-serif;
