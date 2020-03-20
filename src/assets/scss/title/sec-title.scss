@@ -1,0 +1,9 @@
+@import 'variables.scss';
+
+.sec-title {
+  margin-top: 35px;
+  color: $grey-text;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $grey-text-transp;
+  font-weight: 100;
+}
