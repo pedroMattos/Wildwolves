@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+
+.btn {
+  min-width: 250px;
+  text-transform: uppercase;
+  background-color: black;
+  border: $grey-text 1px solid;
+  color: $grey-text;
+  min-height: 50px;
+  margin: 10px auto;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .5s;
+}
+.btn.btn-cta {
+  &::after {
+    content: '';
+    width: 20px;
+    height: 95px;
+    position: absolute;
+    background-color: $grey-transp;
+    transform: rotate(45deg);
+    top: -23px;
+    left: -50%;
+    transition-duration: .2s;
+  }
+  &:hover {
+    transition-duration: .2s;
+    &::after {
+      transition-duration: .2s;
+      left: 100%;
+    }
+  }
+}
