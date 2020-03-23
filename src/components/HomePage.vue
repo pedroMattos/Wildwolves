@@ -4,6 +4,7 @@
     <img id="banner" src="./images/Home-wild.png" alt="Home-banner">
     <news-section></news-section>
     <champ-section></champ-section>
+    <stream-section></stream-section>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import header from './geral-components/header.vue';
 import news from './geral-components/News.vue';
 import campeonatos from './geral-components/Campeonatos.vue';
+import streams from './geral-components/Streams.vue';
 
 export default {
   name: 'HomePage',
@@ -18,6 +20,7 @@ export default {
     'nav-bar': header,
     'news-section': news,
     'champ-section': campeonatos,
+    'stream-section': streams,
   },
   props: {
     msg: String,
