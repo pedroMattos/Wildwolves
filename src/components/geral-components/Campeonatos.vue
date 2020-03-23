@@ -45,6 +45,7 @@ export default {
     }
     h2 {
       font-weight: 400;
+      text-transform: uppercase;
     }
   }
 </style>
