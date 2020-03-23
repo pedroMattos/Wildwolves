@@ -2,7 +2,7 @@
   <nav id="nav" class="row">
     <div class="col-sm-12">
       <ul class="container">
-        <li><img src="../images/logo.png" alt=""></li>
+        <li><img src="../images/logo-white.png" alt=""></li>
         <li><p>Sobre</p></li>
         <li><p>Notícias</p></li>
         <li><p>Loja</p></li>
