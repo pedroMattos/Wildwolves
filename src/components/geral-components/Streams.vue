@@ -14,17 +14,20 @@
       <div class="col-sm-12 col-md-3">
         <card-stream></card-stream>
       </div>
+      <btn-cta></btn-cta>
     </div>
   </section>
 </template>
 
 <script>
 import cardStream from './deep-components/card-stream.vue';
+import btnCta from './deep-components/btn-cta.vue';
 
 export default {
   name: 'sec-streams',
   components: {
     'card-stream': cardStream,
+    'btn-cta': btnCta,
   },
 };
 </script>
