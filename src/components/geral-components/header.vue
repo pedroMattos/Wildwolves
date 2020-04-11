@@ -2,8 +2,12 @@
   <nav id="nav" class="row">
     <div class="col-sm-12">
       <ul class="container">
-        <li><img src="../images/logo-white.png" alt=""></li>
-        <li><p>Sobre</p></li>
+        <router-link :to="{ name: 'home' }">
+          <li><img src="../images/logo-white.png" alt="Logo Wild"></li>
+        </router-link>
+        <router-link :to="{ name: 'About' }">
+          <li><p>Sobre</p></li>
+        </router-link>
         <li><p>Notícias</p></li>
         <li><p>Loja</p></li>
         <li><p>Times</p></li>
@@ -27,6 +31,15 @@ export default {
   #nav {
       position: absolute;
       z-index: 1;
+      a {
+        text-decoration: none;
+        color: $grey-text;
+        transition-duration: .5s;
+        &:hover {
+          transition-duration: .5s;
+          color: white;
+        }
+      }
     ul {
       display: inline-flex;
       list-style: none;
