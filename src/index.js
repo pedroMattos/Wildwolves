@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HomePage from '@/components/HomePage.vue';
-import TestPage from '@/components/TestPage.vue';
+import AboutPage from '@/components/AboutUs.vue';
 
 Vue.use(Router);
 
@@ -14,9 +14,9 @@ export default new Router({
       component: HomePage,
     },
     {
-      path: '/test',
-      name: 'test',
-      component: TestPage,
+      path: '/sobre',
+      name: 'About',
+      component: AboutPage,
     },
   ],
 });
