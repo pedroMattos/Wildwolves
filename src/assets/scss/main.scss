@@ -27,6 +27,22 @@ body {
   }
 }
 
+#tt {
+  &:hover {
+    fill: #00acee !important;
+  }
+}
+#fb {
+  &:hover {
+    fill: #3b5998 !important;
+  }
+}
+#is {
+  &:hover {
+    fill: #DD2A7B !important;
+  }
+}
+
 .centered {
   text-align: center;
 }
