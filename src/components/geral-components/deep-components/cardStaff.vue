@@ -34,7 +34,15 @@ export default {
     color: $grey-text;
     margin-bottom: 50px;
     &:hover {
+      p {
+        transform: translateY(-21px);
+        transition-duration: .5s;
+      }
       .staff-infos {
+        p {
+          transform: translateY(0px);
+          opacity: 0;
+        }
         &::after {
           position: absolute;
           height: 50px;
@@ -67,6 +75,7 @@ export default {
     p {
       font-size: 10px;
       margin: 0;
+      transition-duration: .5s;
     }
     .staff-infos {
       width: 100%;
