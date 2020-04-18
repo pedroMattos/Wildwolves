@@ -5,6 +5,8 @@
       <img id="normal" src="./images/parceiros-normal.png" alt="Title Page">
       <img id="hover" src="./images/parceiros-hover.png" alt="Title Page">
     </p>
+
+    <div class="row"></div>
   </section>
 </template>
 
