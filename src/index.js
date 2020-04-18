@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import HomePage from '@/components/HomePage.vue';
 import AboutPage from '@/components/AboutUs.vue';
+import ParceirosPage from '@/components/Parceiros.vue';
 
 Vue.use(Router);
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/sobre',
       name: 'About',
       component: AboutPage,
+    },
+    {
+      path: '/parceiros',
+      name: 'Parceiros',
+      component: ParceirosPage,
     },
   ],
 });
