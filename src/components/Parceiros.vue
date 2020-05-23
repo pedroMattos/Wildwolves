@@ -1,18 +1,24 @@
 <template>
   <section id="main-parceiros">
-    <h1 style="display:none">Parceiros</h1>
-    <p id="normal-hover" class="centered">
-      <img id="normal" src="./images/parceiros-normal.png" alt="Title Page">
-      <img id="hover" src="./images/parceiros-hover.png" alt="Title Page">
-    </p>
+    <h1>
+      <p id="normal-hover" class="centered">
+        <img id="normal" src="./images/parceiros-normal.png" alt="Parceiros">
+        <img id="hover" src="./images/parceiros-hover.png" alt="Parceiros">
+      </p>
+    </h1>
 
-    <div class="row"></div>
+    <sec-part></sec-part>
   </section>
 </template>
 
 <script>
+import secPartners from './geral-components/Partners.vue';
+
 export default {
   name: 'page-parceiros',
+  components: {
+    'sec-part': secPartners,
+  },
 };
 </script>
 
