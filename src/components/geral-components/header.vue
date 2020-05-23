@@ -11,7 +11,9 @@
         <li><p>Notícias</p></li>
         <li><p>Loja</p></li>
         <li><p>Times</p></li>
-        <li><p>Streams</p></li>
+        <router-link :to="{ name: 'Streams' }">
+          <li><p>Streams</p></li>
+        </router-link>
         <router-link :to="{ name: 'Parceiros' }">
           <li><p>Parceiros</p></li>
         </router-link>
