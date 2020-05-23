@@ -34,3 +34,15 @@
     }
   }
 }
+.btn.btn-external-link {
+  margin-top: 20px;
+  border: none;
+  text-decoration: none;
+  transition-duration: .5s;
+  transform: scale(1);
+  background-color: $black-footer;
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+  }
+}
