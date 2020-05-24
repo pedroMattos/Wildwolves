@@ -6,6 +6,8 @@ import ParceirosPage from '@/components/Parceiros.vue';
 import StreamsPage from '@/components/Streams.vue';
 import TeamsPage from '@/components/Times.vue';
 import IndexTeams from '@/components/IndexTeams.vue';
+import SingleTeams from '@/components/SingleTeams.vue';
+
 
 Vue.use(Router);
 
@@ -45,7 +47,7 @@ export default new Router({
         {
           path: ':name',
           name: 'TeamsSingle',
-          component: TeamsPage,
+          component: SingleTeams,
         },
       ],
     },
