@@ -5,7 +5,9 @@
         <p class="centered">
           <img id="log" src="../images/logo-log.png" alt="logo log">
           <img id="logo-media" src="../images/logo-media.png" alt="logo media">
-          <img src="../images/logo-m.png" alt="logo m">
+          <a href="https://miguelmelodesigner.com/" rel="noreferrer" target="_blank">
+            <img src="../images/logo-m.png" alt="logo m">
+          </a>
         </p>
       </div>
       <div class="container" id="contact-area">
