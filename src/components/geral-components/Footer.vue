@@ -1,33 +1,35 @@
 <template>
-  <footer class="row" id="footer-site">
-    <div class="container" id="partners-area">
-      <p class="centered">
-        <img id="log" src="../images/logo-log.png" alt="logo log">
-        <img id="logo-media" src="../images/logo-media.png" alt="logo media">
-        <img src="../images/logo-m.png" alt="logo m">
-      </p>
-    </div>
-    <div class="container" id="contact-area">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 footer-contents">
-          <p><span>Contato</span> contato@wldwolves.com</p>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-contents">
-          <p class="centered">
-            <router-link :to="{ name: 'home' }">
-              <img src="../images/logo-white.png" alt="logo wild">
-            </router-link>
-          </p>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-contents">
-          <p><span>Social</span>
-            <social-fb></social-fb>
-            <social-tt></social-tt>
-            <social-is></social-is>
-          </p>
-        </div>
+  <footer id="footer-site">
+    <div class="container">
+      <div id="partners-area">
+        <p class="centered">
+          <img id="log" src="../images/logo-log.png" alt="logo log">
+          <img id="logo-media" src="../images/logo-media.png" alt="logo media">
+          <img src="../images/logo-m.png" alt="logo m">
+        </p>
       </div>
-        <p class="centered copyright">Copyright © All rights reserved</p>
+      <div class="container" id="contact-area">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 footer-contents">
+            <p><span>Contato</span> contato@wldwolves.com</p>
+          </div>
+          <div class="col-md-4 col-sm-12 footer-contents">
+            <p class="centered">
+              <router-link :to="{ name: 'home' }">
+                <img src="../images/logo-white.png" alt="logo wild">
+              </router-link>
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 footer-contents">
+            <p><span>Social</span>
+              <social-fb></social-fb>
+              <social-tt></social-tt>
+              <social-is></social-is>
+            </p>
+          </div>
+        </div>
+          <p class="centered copyright">Copyright © All rights reserved</p>
+      </div>
     </div>
   </footer>
 </template>
