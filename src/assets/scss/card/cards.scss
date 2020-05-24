@@ -102,3 +102,52 @@
     }
   }
 }
+
+
+.cards-area {
+  display: inline-flex;
+}
+.card-teams {
+  max-width: 25%;
+  position: relative;
+  margin: 20px;
+  &:hover {
+    img {
+      transition-duration: .5s;
+      filter: brightness(100%);
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition-duration: .5s;
+    &.game-logo {
+      position: absolute;
+      bottom: 50px;
+      width: 50%;
+      left: 25%;
+      filter: unset;
+    }
+  }
+  p {
+    letter-spacing: 10px;
+    color: $grey-text;
+    position: absolute;
+    right: -75px;
+    bottom: 230px;
+    font-size: 10px;
+    transform: rotate(270deg);
+    &::after {
+      content: '-';
+    }
+  }
+  .border-card {
+    position: absolute;
+    top: -10px;
+    left: 14px;
+    right: -14px;
+    bottom: 10px;
+    border: 1px solid $grey-text;
+  }
+}
