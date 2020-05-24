@@ -1,5 +1,5 @@
 <template>
-  <section class="container" id="main-streams">
+  <section class="container section" id="main-streams">
     <h1>Streams</h1>
 
     <card/>
@@ -26,7 +26,6 @@ export default {
 <style lang="scss">
 @import '../assets/scss/variables.scss';
   #main-streams {
-    padding-top: 150px;
     h1 {
       text-align: center;
       color: $grey-text;

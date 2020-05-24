@@ -1,5 +1,5 @@
 <template>
-  <section id="main-parceiros">
+  <section class="section" id="main-parceiros">
     <h1>
       <p id="normal-hover" class="centered">
         <img id="normal" src="./images/parceiros-normal.png" alt="Parceiros">
@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss">
   #main-parceiros {
-    padding-top: 150px;
     #normal-hover {
       position: relative;
       &:hover {

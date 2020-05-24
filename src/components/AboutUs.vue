@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section">
     <div id="about">
       <div class="container">
         <div class="row">
@@ -50,7 +50,6 @@ export default {
     height: 100vh;
     width: 100vw;
     color: $grey-text;
-    padding-top: 150px;
     img {
       width: 350px;
     }
