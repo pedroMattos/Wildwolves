@@ -10,7 +10,9 @@
         </router-link>
         <li><p>Notícias</p></li>
         <li><p>Loja</p></li>
-        <li><p>Times</p></li>
+        <router-link :to="{ name: 'Teams' }">
+          <li><p>Times</p></li>
+        </router-link>
         <router-link :to="{ name: 'Streams' }">
           <li><p>Streams</p></li>
         </router-link>
