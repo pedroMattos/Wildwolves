@@ -1,7 +1,7 @@
 <template>
-  <section class="section">
+  <section>
     <div id="about">
-      <div class="container">
+      <div class="container section">
         <div class="row">
           <div class="col-sm-12 col-md-8">
             <h1>Sobre nós</h1>
