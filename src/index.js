@@ -4,6 +4,8 @@ import HomePage from '@/components/HomePage.vue';
 import AboutPage from '@/components/AboutUs.vue';
 import ParceirosPage from '@/components/Parceiros.vue';
 import StreamsPage from '@/components/Streams.vue';
+import TeamsPage from '@/components/Times.vue';
+import IndexTeams from '@/components/IndexTeams.vue';
 
 Vue.use(Router);
 
@@ -29,6 +31,23 @@ export default new Router({
       path: '/streams',
       name: 'Streams',
       component: StreamsPage,
+    },
+    {
+      path: '/teams',
+      name: 'Teams',
+      component: TeamsPage,
+      children: [
+        {
+          path: '',
+          name: 'Teams',
+          component: IndexTeams,
+        },
+        {
+          path: ':name',
+          name: 'TeamsSingle',
+          component: TeamsPage,
+        },
+      ],
     },
   ],
 });
