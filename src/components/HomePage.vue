@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss">
 @import '../assets/scss/variables.scss';
+@import '../assets/scss/breakpoint.scss';
 
   #main-home {
     #banner {
@@ -45,6 +46,10 @@ export default {
         top: 40%;
         left: 100px;
         font-size: 60px;
+        @include breakpoint(smartphones) {
+          left: 20px;
+          top: 60%;
+        }
         span {
           position: relative;
           p {
