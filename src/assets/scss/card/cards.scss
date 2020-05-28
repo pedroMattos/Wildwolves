@@ -53,6 +53,10 @@
       left: 20px;
       bottom: 5px;
       opacity: 0;
+      @include breakpoint(smartphones) {
+        left: unset;
+        right: 0;
+      }
     }
   }
 }
