@@ -1,5 +1,6 @@
 @import '../../../node_modules/bootstrap-4-grid/css/grid.min.css';
 @import 'variables.scss';
+@import 'breakpoint.scss';
 @import 'btn/btn.scss';
 @import 'title/sec-title.scss';
 @import 'card/cards.scss';
@@ -25,6 +26,15 @@ body {
     font-weight: 100;
     font-size: 12px;
   }
+}
+
+.no-margin {
+  margin: 0 !important;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+.no-padding-ul {
+  padding-inline-start: 0 !important;
 }
 
 #tt {
