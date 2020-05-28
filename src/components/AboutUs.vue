@@ -48,7 +48,6 @@ export default {
     background: url(./images/banner-sobre.png) no-repeat center;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     color: $grey-text;
     img {
       width: 350px;
