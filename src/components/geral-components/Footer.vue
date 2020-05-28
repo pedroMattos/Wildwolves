@@ -42,7 +42,7 @@ import socialTt from '../svg/social-tt.vue';
 import socialIs from '../svg/social-is.vue';
 
 export default {
-  name: 'footer',
+  name: 'footer-site',
   components: {
     'social-fb': socialFb,
     'social-tt': socialTt,
@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss">
 @import '../../assets/scss/variables.scss';
+@import '../../assets/scss/breakpoint.scss';
 
   #footer-site {
     background-color: $black-footer;
@@ -71,6 +72,10 @@ export default {
         margin-right: 50px;
         transition-duration: .5s;
         transform: scale(1);
+        @include breakpoint(smartphones) {
+          margin-left: auto;
+          margin-right: auto;
+        }
         &:hover {
           transition-duration: .5s;
           transform: scale(1.1);
