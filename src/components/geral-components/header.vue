@@ -1,33 +1,40 @@
 <template>
   <nav id="nav" class="row">
     <div class="col-sm-12">
-      <ul class="no-margin no-padding-ul">
+      <ul id="menu" class="no-margin no-padding-ul">
         <router-link :to="{ name: 'home' }">
-          <li><img src="../images/logo-white.png" alt="Logo Wild"></li>
+          <li id="first" class="list-iten"><img src="../images/logo-white.png" alt="Logo Wild"></li>
         </router-link>
         <router-link :to="{ name: 'About' }">
-          <li><p>Sobre</p></li>
+          <li class="list-iten"><p>Sobre</p></li>
         </router-link>
-        <li><p>Notícias</p></li>
-        <li><p>Loja</p></li>
+        <li class="list-iten"><p>Notícias</p></li>
+        <li class="list-iten"><p>Loja</p></li>
         <router-link :to="{ name: 'Teams' }">
-          <li><p>Times</p></li>
+          <li class="list-iten"><p>Times</p></li>
         </router-link>
         <router-link :to="{ name: 'Streams' }">
-          <li><p>Streams</p></li>
+          <li class="list-iten"><p>Streams</p></li>
         </router-link>
         <router-link :to="{ name: 'Parceiros' }">
-          <li><p>Parceiros</p></li>
+          <li class="list-iten"><p>Parceiros</p></li>
         </router-link>
-        <li><p>Contato</p></li>
+        <li class="list-iten"><p>Contato</p></li>
       </ul>
+    </div>
+    <div class="drop-menu collapsed">
+      <div id="controller" class="open-menu"></div>
+      <div id="clone" class="open-menu"></div>
     </div>
   </nav>
 </template>
 
 <script>
+import menu from '../mixins/menu-control';
+
 export default {
   name: 'nav-bar',
+  mixins: [menu],
 };
 </script>
 
@@ -39,7 +46,7 @@ export default {
       position: absolute;
       z-index: 1;
       @include breakpoint(smartphones) {
-        z-index: 2;
+        z-index: 999991;
       }
       a {
         text-decoration: none;
@@ -55,6 +62,11 @@ export default {
       list-style: none;
       color: $grey-text;
       @include breakpoint(smartphones) {
+        #first {
+          margin-bottom: 60px;
+          padding: 0;
+        }
+        margin-top: 100px;
         display: block;
         background-color: $black-footer;
         position: fixed;
@@ -63,12 +75,21 @@ export default {
         left: 0;
         overflow: hidden;
         height: 100px;
+        transition-duration: .5s;
         li {
           text-align: center;
         }
       }
       li {
         margin: 0 18px 0;
+        @include breakpoint(smartphones) {
+          margin: 0;
+          height: 50px;
+          padding: 20px 0;
+          p {
+            margin-top: 0 !important;
+          }
+        }
         p {
           margin-top: 50px;
           &:first-child {
