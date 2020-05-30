@@ -25,9 +25,14 @@ export default {
 
 <style lang="scss">
 @import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/breakpoint.scss';
+
 
   #mvv {
     color: $grey-text;
     margin-bottom: 80px;
+    @include breakpoint(smartphones) {
+      text-align: center;
+    }
   }
 </style>
