@@ -1,6 +1,7 @@
 <template>
   <section class="section" id="main-parceiros">
     <h1>
+      <span>Parceiros</span>
       <p id="normal-hover" class="centered">
         <img id="normal" src="./images/parceiros-normal.png" alt="Parceiros">
         <img id="hover" src="./images/parceiros-hover.png" alt="Parceiros">
@@ -23,8 +24,19 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/variables.scss';
+@import '../assets/scss/breakpoint.scss';
   #main-parceiros {
+    h1 span {
+      display: none;
+      @include breakpoint(smartphones) {
+        display: block;
+      }
+    }
     #normal-hover {
+      @include breakpoint(smartphones) {
+        display: none;
+      }
       position: relative;
       &:hover {
         #normal {
