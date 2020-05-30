@@ -1,0 +1,50 @@
+.drop-menu {
+  @include breakpoint(smartphones) {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 30px;
+    .open-menu {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        height: 5px;
+        left: 0;
+        right: 10px;
+        border-radius: 0 0 5px 0;
+        background-color: $grey-text;
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        height: 5px;
+        top: 10px;
+        left: 0;
+        right: 15px;
+        border-radius: 0 0 5px 0;
+        background-color: $grey-text;
+      }
+      &#clone {
+        &::before {
+          position: absolute;
+          content: '';
+          height: 5px;
+          top: 20px;
+          left: 0;
+          right: 20px;
+          border-radius: 0 0 5px 0;
+          background-color: $grey-text;
+        }
+      }
+    }
+  }
+}
+
+// transitions menu
+
+.expand {
+  height: unset !important;
+  transition-duration: .5s;
+}
