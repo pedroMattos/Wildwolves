@@ -27,12 +27,17 @@ export default {
 
 <style lang="scss">
 @import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/breakpoint.scss';
   .staff-card {
     border-bottom: 1px solid $grey-transp;
     max-width: 190px;
     position: relative;
     color: $grey-text;
     margin-bottom: 50px;
+    @include breakpoint(smartphones) {
+      margin-left: auto;
+      margin-right: auto;
+    }
     &:hover {
       p {
         transform: translateY(-21px);
