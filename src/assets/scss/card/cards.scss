@@ -64,6 +64,9 @@
 .card-stream-page {
   max-width: 800px;
   margin: 0px auto 20px;
+  @include breakpoint(smartphones) {
+    max-width: 100%;
+  }
   .streamer {
     border: 1px solid #a1a1a1;
     padding: 5px;
@@ -80,6 +83,9 @@
     transform: translateX(20px);
     color: $grey-text;
     padding-top: 50px;
+    @include breakpoint(smartphones) {
+      transform: translateX(0px);
+    }
     .social-medias {
       display: inline;
       svg {
@@ -96,6 +102,9 @@
       left: 100px;
       width: 300px;
       height: 100px;
+      @include breakpoint(smartphones) {
+        display: none;
+      }
     }
     h2 {
       text-transform: uppercase;
@@ -112,6 +121,9 @@
 
 .cards-area {
   display: inline-flex;
+  @include breakpoint(smartphones) {
+    display: block;
+  }
 }
 .card-teams {
   max-width: 25%;
@@ -167,6 +179,9 @@
     max-width: 25%;
     min-height: 300px;
     border: none;
+    @include breakpoint(smartphones) {
+      max-width: 100%;
+    }
     img {
       width: 100%;
       min-height: 300px;
