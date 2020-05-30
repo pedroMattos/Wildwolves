@@ -43,14 +43,25 @@ export default {
 
 <style lang="scss">
 @import '../assets/scss/variables.scss';
+@import '../assets/scss/breakpoint.scss';
 
   #about {
     background: url(./images/banner-sobre.png) no-repeat center;
     background-size: cover;
     height: 100vh;
     color: $grey-text;
+    @include breakpoint(smartphones) {
+      height: unset;
+      p {
+        letter-spacing: 2px;
+        font-size: 15px;
+      }
+    }
     img {
       width: 350px;
+      @include breakpoint(smartphones) {
+        width: 100%;
+      }
     }
   }
 </style>
